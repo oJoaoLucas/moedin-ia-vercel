@@ -4,7 +4,7 @@
 
 - **No ar:** <https://www.moedin-ia.com.br>
 - **Tipo:** Trabalho de Conclusão de Curso — Sistemas de Informação, FHO Uniararas (2026)
-- **Período:** março a novembro de 2026 · 92 commits · 7 versões marcadas (v0.1 → v3.0)
+- **Período:** março a novembro de 2026 · 93 commits · 7 versões marcadas (v0.1 → v3.0)
 - **Equipe:** 5 pessoas (ver [Equipe](#equipe))
 
 ![Landing do Moedin-IA](../screenshots/landing.png)
@@ -154,7 +154,7 @@ No celular:
 Três peças, **um banco só**:
 
 1. **Painel** — Next.js 16 na Vercel (região São Paulo). Fala com o Supabase direto do navegador, protegido por Row Level Security.
-2. **Bot** — workflow no **n8n** com o nó *AI Agent* (109 nós). O modelo decide qual ferramenta usar; **cada ferramenta é uma função SQL (RPC)** no Supabase. Roda num **servidor doméstico** (home lab, Docker) com a Evolution API (ponte com o WhatsApp) e o Redis.
+2. **Bot** — workflow no **n8n** com o nó *AI Agent* (99 nós). O modelo decide qual ferramenta usar; **cada ferramenta é uma função SQL (RPC)** no Supabase. Roda num **servidor doméstico** (home lab, Docker) com a Evolution API (ponte com o WhatsApp) e o Redis.
 3. **Banco** — PostgreSQL gerenciado pelo Supabase: dados, autenticação, Realtime e as regras de negócio do bot.
 
 **Caminho de uma mensagem:**
@@ -242,11 +242,11 @@ A Evolution API usa o protocolo do WhatsApp Web, que pode ser banido. Mitigaçã
 
 | | |
 |---|---|
-| Commits | 92 |
+| Commits | 93 |
 | Versões marcadas | 7 do sistema (v0.1 a v3.0); o bot chegou à v2.20 |
-| Migrations SQL | 38 |
+| Migrations SQL | 38 numeradas |
 | Tabelas | 15, todas com RLS |
-| Workflow do bot | 109 nós, 27 ferramentas |
+| Workflow do bot | 99 nós, 27 ferramentas |
 | Código do painel | ~13 mil linhas de TypeScript/TSX |
 | Telas do painel | 10 rotas logadas + landing, login, cadastro, termos |
 | Entradas aceitas | texto, áudio, foto, PDF, planilha em PDF |
